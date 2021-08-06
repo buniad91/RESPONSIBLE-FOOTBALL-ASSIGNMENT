@@ -45,13 +45,15 @@ h1{
 
 /* -----------------------Header End */
 
-
+/* ============================================Main Section Start============================ */
 
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/* ----------------------Main / Section - 1 Start------------- */
 
 .players{
     display: grid;
@@ -60,9 +62,9 @@ main{
 
 .first-section-player{
     box-shadow: 0 4px 8px 0px rgb(206, 205, 205);
-    width: 450px;
-    margin: 20px;
-    margin-top: 50px;
+    width: 420px;
+    margin-left: 30px;
+    margin-top: 40px;
 }
 
 .player-images img{
@@ -77,6 +79,75 @@ main{
     padding: 30px;
 }
 
+/* ----------------------Main / Section - 1 end------------- */
+
+
+
+/* ----------------------Main / Section - 2 Start------------- */
+
+.football-highlights-section{
+    width: 1400px;
+    margin-top: 50px;
+    
+}
+
+.highlights-title{
+    margin-left: 10px;
+}
+
+.watch-now-button{
+    text-decoration: none;
+    background-color: rgb(248, 128, 72);
+    color: white;
+    padding: 10px 30px 10px 30px;
+    box-shadow: 0 4px 5px 0 rgb(241, 127, 107);
+}
+.fas{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.football-highlights-section h2{
+    font-size: 50px;
+    color: rgb(32, 132, 136);
+}
+
+.football-highlights{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* ----------------------Main / Section - 2 end------------- */
+
+/* ============================================Main Section end============================ */
+
+
+
+/* ============================================Footer Section Start============================ */
+
+#footer-logo{
+    margin-top: 50px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.footer-icons{
+    text-align: center;
+    font-size: 25px;
+}
+.fab{
+    margin: 10px;
+    padding: 10px;
+    background-color: gainsboro;
+    border-radius: 50px;
+}
+
+footer p{
+    text-align: center;
+}
+
+/* ============================================Footer Section End============================ */
 
 
 
@@ -86,18 +157,10 @@ main{
 
 
 
+/* ================================================= Media Queries ============================= */
 
+/* ===========================   Mobile Device   ======================= */
 
-
-
-
-
-
-
-
-/* ============================== Media Queries ============================= */
-
-/* ========================================   Mobile Device   ========================== */
 @media screen and (max-width:688px) {
     .container{
         width: 100%;
@@ -118,6 +181,8 @@ main{
     }
 
     /* ----------------------Main------------------- */
+
+    /* ----------------------------Main / Section - 1 Start------------- */
     .players{
         grid-template-columns: repeat(1, 1fr);
         
@@ -130,4 +195,31 @@ main{
     .player-images img{
         width: 300px;
     }
+
+    /* ----------------------------Main / Section - 1 End------------- */
+
+
+    /* ---------------------------Main / Section - 2 Start-------------- */
+
+    .football-highlights{
+        grid-template-columns: repeat(1, 1fr);
+        width: 300px;
+    }
+    .football-highlights-section h2{
+        font-size: 30px;
+    }
+    .football-highlights iframe{
+        width: 370px;
+    }
+
+    /* ---------------------------Main / Section - 2 End-------------- */
+
+    /* ---------------------------Footer Start---------------------- */
+
+    #footer-logo{
+        width: 200px;
+    }
+
+    /* ---------------------------Footer End---------------------- */
+    
 }
