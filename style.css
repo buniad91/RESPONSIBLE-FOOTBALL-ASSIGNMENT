@@ -1,0 +1,133 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* -----------------------Header Start------------------------- */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.football-header-section{
+    background-color: rgb(25, 122, 126);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container{
+    width: 1400px;
+    /* border: 1px solid; */
+}
+
+.football-header-banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+h1{
+    font-size: 80px;
+    color: white;
+}
+.watch-live-button{
+    text-decoration:none ;
+    background-color:rgb(247, 71, 123);
+    display: inline;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+}
+.fa-arrow-right{
+    margin-left: 10px;
+    font-size: 18px;
+}
+.header-banner-image img{
+    width: 600px;
+}
+
+/* -----------------------Header End */
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.first-section-player{
+    box-shadow: 0 4px 8px 0px rgb(206, 205, 205);
+    width: 450px;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.player-images img{
+    padding-top: 15px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.player-details{
+    padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================== Media Queries ============================= */
+
+/* ========================================   Mobile Device   ========================== */
+@media screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    h1{
+        font-size: 45px;
+        margin-left: 30px;
+    }
+    .watch-live-button{
+       margin-left: 30px;
+    }
+    .football-header-banner{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .header-banner-image img{
+        max-width: 100%;
+        margin-top: 50px;
+    }
+
+    /* ----------------------Main------------------- */
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .first-section-player{
+        width: 350px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .player-images img{
+        width: 300px;
+    }
+}
